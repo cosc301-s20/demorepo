@@ -11,3 +11,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: make
       run: make
+    - name: test with a name
+      run: |
+        echo "Owain Glyndwr" | ./name | tee output.txt
+        grep "Hello, Owain Glyndwr" output.txt
