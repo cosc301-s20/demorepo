@@ -13,5 +13,5 @@ jobs:
       run: make
     - name: test with a name
       run: |
-        echo "Owain Glyndwr" | ./name | tee output.txt | echo
-        grep "Hello, Owain Glyndwr" output.txt
+        echo "Owain Glyndwr" | ./name 
+        grep "Welcome to C, Owain Glyndwr" output.txt
