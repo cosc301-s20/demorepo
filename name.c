@@ -7,6 +7,6 @@ int main() {
     printf("Type a name: ");
     fgets(name, 64, stdin);
     name[strlen(name)-1] = '\0'; // squash newline from fgets
-    printf("Welcome to Tuesday, %s\n", name);
+    printf("Welcome to today, %s\n", name);
     return EXIT_SUCCESS;
 }
